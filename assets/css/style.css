@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Outfit:wght@500&family=Poppins:wght@300;500;800&family=Roboto:wght@100;300;400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+main{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.background{
+    width: 100%;
+    height: 100vh;    
+    background:linear-gradient(-200deg,rgba(0,0,0,0.5)43%,rgba(87, 87, 87, 0.3) 100%);
+
+}
+header{
+    display:flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+header .cabecalho-link{
+    display: flex;
+    gap:3rem;
+    font-weight: 300;
+}
+header .cabecalho-link a{
+    color:#fff;
+    font-size:22px;
+    transition:all 0.3s;
+    cursor:pointer;
+}
+header .cabecalho-link a:hover{
+    color:#8a2be2;
+    border-bottom: 1px solid #5a5a5a;
+    
+}
+header .logo{
+    color:#8a2be2;
+    font-size: 40px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #8a2be2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 0.2s;
+}
+header .logo img{
+    position: absolute;
+    width: 70px;
+    filter: hue-rotate(600deg);
+    animation: infinite flutuacao 2s ease-in-out;
+}
+@keyframes flutuacao {
+    0%{top:0%;}
+    50%{top:2%;}
+    100%{top:0%;}
+}
+header .logo:hover{
+    font-size: 45px;
+}
+.container-text{
+    min-width: 400px;
+    max-width: 500px;
+    position: relative;
+    top:20%;
+    left:10%;
+    padding:30px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0px 10% 10% 10%;
+}
+.container-text::after{
+    content: '';
+    width:30px;
+    height:30px;
+    background-color: #777;
+    position: absolute;
+    top:-10px;
+    left:-10px;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+.text h3{
+    color:#fff;
+    font-size: 18px;
+}
+.text h1{
+    color:#fff;
+    margin-top: 10px;
+    font-size: 2.40rem;
+}
+.text h1 span{
+    color:#b15eff;
+}
+.text p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.container-text .redes-sociais{
+    padding: 10px;
+    font-size: 2.9rem;
+    display: flex;
+    gap:10px;
+    justify-content: space-around;
+}
+.instagram{
+    width: 2.6rem;
+    height: 2.8rem;
+    color: #000000;
+    background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+    border-radius: 5px;
+}
+.github{
+    width: 45px;
+    height: 44px;
+    color:#eeeeee;
+    background-color: #000000;
+    border-radius: 3rem;
+}
